@@ -51,8 +51,9 @@ body {
 
 .weather-container{
     width: 300px;
-    height: 260px;
+    height: auto;
     background-color: #F4F9FF;
+    border-radius:5px;
 }
 
 .weather-icon{
