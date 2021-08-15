@@ -2,6 +2,7 @@
 const iconElement = document.querySelector(".weather-icon");
 const tempElement = document.querySelector(".temperature-value p");
 const descElement = document.querySelector(".temperature-description p");
+const humElement=document.querySelector(".humidity-description p");
 const locationElement = document.querySelector(".location p");
 const notificationElement = document.querySelector(".notification");
 
@@ -67,6 +68,7 @@ function displayWeather(){
     iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
     tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
     descElement.innerHTML = weather.description;
+    humElement.innerHTML=weather.humidity;
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
 }
 
