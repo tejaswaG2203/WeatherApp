@@ -5,7 +5,7 @@
 body {
   background: linear-gradient(to right, rgb(255, 167, 35), rgb(255, 97, 35));
   display: flex;
-/*   justify-content: center; */
+  justify-content: center;
   align-items: center;
   min-height: 100vh;
   margin: 0;
@@ -15,7 +15,6 @@ body {
 .container {
   max-width: 300px;
   width: 1200px;
-    height:auto;
   background-color: smokewhite;
   box-shadow: 0 5px 10px black;
   border-radius: 5px;
@@ -51,7 +50,7 @@ body {
 
 .weather-container{
     width: 300px;
-    height: auto;
+    height: 310;
     background-color: #F4F9FF;
     border-radius:5px;
 }
