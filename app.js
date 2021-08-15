@@ -50,7 +50,7 @@ function getWeather(latitude, longitude){
             return data;
         })
         .then(function(data){
-            weather.temperature.value =data.main.temp
+            weather.temperature.value =Math.ceil(data.main.temp);
             weather.description = data.weather[0].description;
             weather.iconId = data.weather[0].icon;
             weather.humidity=data.main.humidity;
