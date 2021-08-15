@@ -41,7 +41,7 @@ function showError(error){
 
 // GET WEATHER FROM API PROVIDER
 function getWeather(latitude, longitude){
-    let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
+    let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${key}`;
     
     fetch(api)
         .then(function(response){
@@ -49,11 +49,13 @@ function getWeather(latitude, longitude){
             return data;
         })
         .then(function(data){
-            weather.temperature.value = Math.floor(data.main.temp - KELVIN);
+            weather.temperature.value =data.main.temp
             weather.description = data.weather[0].description;
             weather.iconId = data.weather[0].icon;
+            weather.humidity=data.main.humidity;
             weather.city = data.name;
             weather.country = data.sys.country;
+        
         })
         .then(function(){
             displayWeather();
