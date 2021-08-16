@@ -13,11 +13,21 @@ body {
 }
 
 .container {
-  max-width: 300px;
+ /* max-width: 300px;
   width: 1200px;
   background-color: smokewhite;
   box-shadow: 0 5px 10px black;
-  border-radius: 5px;
+  border-radius: 5px;*/
+
+      width: auto;
+    background-color: gray;
+    box-shadow: 0 5px 10px black;
+    border-radius: 5px;
+    height: auto;
+    margin: 10%;
+        margin-top: 10%;
+    padding: 10px;
+
 }
 
 .app-title{
