@@ -6,6 +6,7 @@ const humElement=document.querySelector(".humidity-description p");
 const locationElement = document.querySelector(".location p");
 const notificationElement = document.querySelector(".notification");
 
+
 // App data
 const weather = {};
 
